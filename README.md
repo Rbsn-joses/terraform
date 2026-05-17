@@ -1,0 +1,1 @@
+Get-Content .env | ForEach-Object { if ($_ -match "=") { $k,$v = $_.Split('=',2); [System.Environment]::SetEnvironmentVariable($k.Trim(), $v.Trim().Trim('"'), "Process") } }
