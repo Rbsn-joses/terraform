@@ -1,0 +1,28 @@
+# Mapeamento Comparativo Expandido: AWS vs Azure vs GCP
+
+## 1. Tabela Comparativa de Serviços e Ferramentas
+
+| Categoria | Conceito / Função | AWS (Amazon) | Microsoft Azure | Google Cloud (GCP) | Descrição Detalhada do Componente |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Segurança & Auditoria** | Trilha de Auditoria e Ações | **AWS CloudTrail** | **Azure Activity Log** | **Cloud Audit Logs** | Registra todas as chamadas de API, alterações de infraestrutura e ações de usuários na conta. Crucial para auditoria de segurança ("quem fez o quê, quando e onde"). |
+| **Gestão de Gastos & FinOps** | Análise e Controle de Custos | AWS Cost Explorer / AWS Budgets | Azure Cost Management + Billing | Cloud Billing / Cost Optimization | Ferramentas para monitorar, prever, orçamentar e otimizar os custos da nuvem, emitindo alertas antes do estouro de orçamento. |
+| **Observabilidade & SRE** | Monitoramento e Métricas | Amazon CloudWatch | Azure Monitor | Cloud Monitoring | Coleta métricas de performance (CPU, memória, rede) de todos os recursos e gera alertas automáticos em caso de anomalias. |
+| **Observabilidade & SRE** | Centralização de Logs | CloudWatch Logs | Log Analytics / Azure Monitor | Cloud Logging | Armazena, pesquisa e analisa registros textuais (logs) gerados pelos sistemas e aplicações para depuração de erros. |
+| **Segurança & Governança** | Gerenciamento de Segredos | AWS Secrets Manager | Azure Key Vault | Secret Manager | Armazenamento seguro de senhas, chaves de API e credenciais de banco de dados, com rotação automática de chaves. |
+| **Computação** | Servidores Virtuais | EC2 (Elastic Compute Cloud) | Virtual Machines (VMs) | Compute Engine | Máquinas virtuais sob demanda com controle total do sistema operacional, memória e CPU. |
+| **Computação** | Orquestração Kubernetes | EKS (Elastic Kubernetes Service) | AKS (Azure Kubernetes Service) | GKE (Google Kubernetes Engine) | Gerenciamento e orquestração de clusters de contêineres Docker usando o padrão Kubernetes. |
+| **Computação** | Serverless (FaaS) | AWS Lambda | Azure Functions | Cloud Functions / Cloud Run | Execução de código baseada em eventos, sem necessidade de gerenciar servidores. Cobrança por milissegundo de execução. |
+| **Bancos de Dados** | Banco Relacional (SQL) | RDS / Amazon Aurora | Azure SQL Database | Cloud SQL / AlloyDB | Bancos de dados relacionais gerenciados (MySQL, PostgreSQL, SQL Server) com backup, patches e alta disponibilidade automáticos. |
+| **Bancos de Dados** | Banco Não-Relacional (NoSQL) | Amazon DynamoDB | Cosmos DB | Firestore / Bigtable | Bancos de dados NoSQL de chave-valor ou documento de altíssima escala, baixa latência e performance previsível. |
+| **Bancos de Dados** | Cache em Memória | Amazon ElastiCache | Azure Cache for Redis | Cloud Memorystore | Bancos de dados em memória de altíssima velocidade para cache de sessões, dados frequentes e redução de carga no banco principal. |
+| **Bancos de Dados** | Data Warehouse (Analytics) | Amazon Redshift | Azure Synapse Analytics | BigQuery | Bancos de dados analíticos colunares massivos para executar consultas complexas e Business Intelligence (BI) em petabytes de dados. |
+| **Redes & Conectividade** | Rede Isolada | VPC (Virtual Private Cloud) | VNet (Virtual Network) | VPC (Virtual Private Cloud) | Rede lógica isolada dedicada para os recursos, onde se definem IPs, sub-redes e regras de firewall. |
+| **Redes & Conectividade** | Conexão Segura (VPN) | AWS Site-to-Site VPN / Client VPN | Azure VPN Gateway | Cloud VPN | Conexão criptografada via internet ligando a infraestrutura local (On-Premises) à nuvem ou ligando usuários externos de forma segura. |
+| **Redes & Conectividade** | Link Dedicado / Direto | AWS Direct Connect | ExpressRoute | Cloud Interconnect | Conexão de rede física e dedicada que contorna a internet pública, oferecendo maior largura de banda e menor latência estável. |
+| **Redes & Conectividade** | Gerenciamento de DNS | Amazon Route 53 | Azure DNS | Cloud DNS | Serviço de sistema de nomes de domínio (DNS) altamente disponível e escalável para rotear os usuários para as aplicações. |
+| **Mensageria & Integração** | Filas e Mensagens (Pub/Sub) | Amazon SQS / Amazon SNS | Azure Service Bus / Queue Storage | Pub/Sub | Desacoplamento de arquiteturas de microsserviços por meio do envio assíncrono de mensagens e eventos. |
+| **Armazenamento** | Objetos (Arquivos) | Amazon S3 | Blob Storage | Cloud Storage | Armazenamento ilimitado de arquivos estáticos (imagens, vídeos, backups) acessíveis via web/API. |
+| **Migração** | Migração de Infraestrutura / VMs | AWS Application Migration Service (MGN) | Azure Migrate | Migration Center | Ferramenta para avaliar, planejar e migrar servidores físicos ou virtuais locais diretamente para a nuvem de destino. |
+| **Migração** | Migração de Bancos de Dados | AWS DMS (Database Migration Service) | Azure Database Migration Service | Database Migration Service (DMS) | Migração de bancos de dados com tempo de inatividade mínimo, suportando migrações homogêneas e heterogêneas. |
+| **Segurança & Identidade** | Gestão de Acessos (IAM) | AWS IAM | Microsoft Entra ID (Antigo Azure AD) | Cloud IAM | Autenticação e controle de permissões granular para usuários, grupos e recursos internos da nuvem. |
+| **Inteligência Artificial** | Plataforma de IA / ML | Amazon SageMaker / Bedrock | Azure AI Studio / OpenAI Service | Vertex AI | Ambientes integrados para criar, treinar e implantar modelos de Machine Learning ou consumir modelos de IA Generativa via API (ex: OpenAI / Gemini). |
